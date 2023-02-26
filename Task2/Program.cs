@@ -23,7 +23,7 @@ void PrintArray(int[] number)
     Console.WriteLine();
 }
 
-int GetEvenSum(int[] number)
+int GetOddSum(int[] number)
 {
     int sum = 0;
     for (int i = 1; i < number.Length; i+=2)
@@ -35,6 +35,6 @@ int GetEvenSum(int[] number)
 
 int[] arr = InitArray();
 PrintArray(arr);
-int sum = GetEvenSum(arr);
+int sum = GetOddSum(arr);
 
 Console.WriteLine($"Сумма нечетных позиций = {sum}");
